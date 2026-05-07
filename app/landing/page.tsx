@@ -3,7 +3,7 @@ export default function Page() {
     {
       title: "Readable workflow code",
       description:
-        "Write automations in simple, human-friendly syntax instead of stitching together brittle scripts.",
+        "Write automations in simple, readable syntax instead of stitching together brittle scripts.",
     },
     {
       title: "AI-native by design",
@@ -71,7 +71,7 @@ export default function Page() {
   const faqs = [
     {
       q: "What is SolveLang?",
-      a: "SolveLang is a human-readable scripting language for AI automations, workflows, and business logic.",
+      a: "SolveLang is a readable scripting language for AI automations, workflows, and business logic.",
     },
     {
       q: "Who is it for?",
@@ -100,10 +100,10 @@ export default function Page() {
               Early beta • AI automation language • Built for business workflows
             </div>
             <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
-              Build AI automations in plain, readable code.
+              Build AI automations in clear, readable code.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
-              SolveLang helps teams script workflows, agents, and business logic with simple human-friendly syntax.
+              SolveLang helps teams script workflows, agents, and business logic with simple readable syntax.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
@@ -127,9 +127,7 @@ export default function Page() {
                 <div className="h-3 w-3 rounded-full bg-white/30" />
                 <div className="h-3 w-3 rounded-full bg-white/20" />
                 <div className="h-3 w-3 rounded-full bg-white/10" />
-                <span className="ml-3 text-xs uppercase tracking-[0.2em] text-slate-400">
-                  support-routing.solve
-                </span>
+                <span className="ml-3 text-xs uppercase tracking-[0.2em] text-slate-400">support-routing.solve</span>
               </div>
               <pre className="overflow-x-auto p-6 text-sm leading-7 text-slate-100">
 {`agent SupportBot {
@@ -155,10 +153,7 @@ ask SupportBot("Customer cannot access billing portal")`}
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid gap-6 md:grid-cols-3">
           {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
-            >
+            <div key={feature.title} className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">{feature.title}</h3>
               <p className="mt-3 leading-7 text-slate-600">{feature.description}</p>
             </div>
@@ -169,23 +164,17 @@ ask SupportBot("Customer cannot access billing portal")`}
       <section className="border-y border-slate-200 bg-slate-50">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Why this matters
-            </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Why this matters</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Faster than building custom glue code for every workflow.
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Instead of mixing prompts, API calls, and business rules across scattered
-              scripts, SolveLang gives you one readable layer for AI-powered automations.
+              Instead of mixing prompts, API calls, and business rules across scattered scripts, SolveLang gives you one readable layer for AI-powered automations.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {useCases.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-              >
+              <div key={item} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="font-medium">{item}</p>
               </div>
             ))}
@@ -195,15 +184,12 @@ ask SupportBot("Customer cannot access billing portal")`}
 
       <section id="pricing" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Pricing
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Pricing</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
             Start with a pilot, then scale into a platform.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Early-stage pricing designed to help you land custom setups now and evolve into
-            recurring SaaS revenue later.
+            Early-stage pricing designed to help you land custom setups now and evolve into recurring SaaS revenue later.
           </p>
         </div>
 
@@ -220,11 +206,7 @@ ask SupportBot("Customer cannot access billing portal")`}
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-semibold">{plan.name}</h3>
-                  <p
-                    className={`mt-2 text-sm ${
-                      plan.featured ? "text-slate-300" : "text-slate-500"
-                    }`}
-                  >
+                  <p className={`mt-2 text-sm ${plan.featured ? "text-slate-300" : "text-slate-500"}`}>
                     {plan.subtitle}
                   </p>
                 </div>
@@ -237,12 +219,7 @@ ask SupportBot("Customer cannot access billing portal")`}
               <p className="mt-8 text-4xl font-semibold">{plan.price}</p>
               <ul className="mt-8 space-y-4">
                 {plan.items.map((item) => (
-                  <li
-                    key={item}
-                    className={`flex items-start gap-3 ${
-                      plan.featured ? "text-slate-100" : "text-slate-700"
-                    }`}
-                  >
+                  <li key={item} className={`flex items-start gap-3 ${plan.featured ? "text-slate-100" : "text-slate-700"}`}>
                     <span className="mt-2 h-2 w-2 rounded-full bg-current" />
                     <span>{item}</span>
                   </li>
@@ -266,15 +243,12 @@ ask SupportBot("Customer cannot access billing portal")`}
       <section id="demo" className="border-y border-slate-200 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
-              Early access
-            </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Early access</p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Get a custom AI workflow built with SolveLang.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Start with a paid pilot. We’ll help define the workflow, script the automation,
-              connect the tools, and get it working for your business.
+              Start with a paid pilot. We’ll help define the workflow, script the automation, connect the tools, and get it working for your business.
             </p>
             <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-300">
               <span className="rounded-full border border-white/10 px-4 py-2">Support workflows</span>
@@ -323,19 +297,14 @@ ask SupportBot("Customer cannot access billing portal")`}
 
       <section className="mx-auto max-w-5xl px-6 py-20 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-            FAQ
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">FAQ</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
             Common questions from early users
           </h2>
         </div>
         <div className="mt-12 space-y-4">
           {faqs.map((faq) => (
-            <div
-              key={faq.q}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
-            >
+            <div key={faq.q} className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <h3 className="text-lg font-semibold">{faq.q}</h3>
               <p className="mt-3 leading-7 text-slate-600">{faq.a}</p>
             </div>
@@ -345,3 +314,4 @@ ask SupportBot("Customer cannot access billing portal")`}
     </div>
   );
 }
+
