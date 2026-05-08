@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "solvelang": {
+      "command": "node",
+      "args": ["/Users/saiidz1/solvelang-site/mcp/solvelang-mcp.mjs"]
+    }
+  }
+}
