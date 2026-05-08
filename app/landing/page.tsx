@@ -116,7 +116,7 @@ export default function Page() {
                 href="#pricing"
                 className="rounded-2xl border border-slate-300 bg-white px-6 py-3 text-sm font-medium shadow-sm transition hover:-translate-y-0.5"
               >
-                View Pricing
+                Try Hosted Runner
               </a>
             </div>
           </div>
