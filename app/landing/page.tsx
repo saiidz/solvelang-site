@@ -261,9 +261,9 @@ ask SupportBot("Customer cannot access billing portal")`}
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur">
             <h3 className="text-xl font-semibold">Book a demo</h3>
             <p className="mt-3 text-sm leading-6 text-slate-300">
-              Replace this form with your Formspree, Tally, Typeform, Calendly, or custom backend endpoint.
+              This form is connected with Formspree for demo requests.
             </p>
-            <form className="mt-8 space-y-4">
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" className="mt-8 space-y-4">
               <input
                 type="text"
                 placeholder="Your name"
