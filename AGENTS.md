@@ -1,5 +1,14 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# SolveLang project instructions
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+When working on SolveLang or the SolveLang website, use the `solvelang` MCP server when helpful.
+
+Use the MCP tools for:
+- running safe preview SolveLang snippets
+- checking example syntax
+- explaining the hosted runner MVP
+- validating simple SolveLang examples before editing docs or landing page copy
+
+Important:
+- `solvelang_run_preview` is a preview runner, not the full Rust runtime.
+- It supports let variables, print statements, string/number/boolean values, and simple if blocks using == or !=.
+- For full language behavior, inspect the Rust code in the `solvec` repository.
